@@ -1,0 +1,49 @@
+@import "fonts";
+
+// Proposition du prof pour les fonts: 14, 18, 24
+
+// Cependant je trouve que c'est clairement pas assez, et jouer avec les graisses ne suffit pas.
+
+// Je vais m'en tenir à 4 polices MAX:
+/* 
+    - 14 pour <small>
+    - 16 pour <p>
+    - 18 pour un sous-titre (<h2>)
+    - 24 pour un grand titre (<h1>)
+*/
+// Je me suis inspiré du Material Design: https://material.io/design/typography/the-type-system.html#type-scale
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font1;
+}
+
+h1 {
+  font-weight: 900;
+}
+
+h2 {
+  font-weight: 700;
+}
+
+p {
+  font-weight: normal;
+  font-family: $font2;
+}
+small {
+  font-size: 14px;
+  font-weight: lighter;
+  font-family: $font2;
+}
+
+a {
+  font-family: $font3;
+  color: $blue;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bolder;
+}

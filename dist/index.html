@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- IMPORTANT: RESTRUCTURER LE CONTENU -->
+    <!-- 
+
+        P-e faire un div page wrapper
+            navbar
+            sidebar
+            contentwrapper
+                top: 5rem
+                height: calc(100% - 5rem)
+
+                pour créer un espace entre la navbar/sidebar & le contenu
+     -->
+    <header class="header">
+        <nav class="navbar">
+            <ul>
+                <li><span class="material-icons md-36">notifications</span></li>
+                <li><span class="material-icons md-36">mail</span></li>
+                <li><span class="material-icons md-36">face</span></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <section class="col-6">
+            <div class="card">
+                <header>
+                    <h1>Test Form</h1>
+                </header>
+                <div class="content">
+                    <form>
+                        <div class="input-group">
+                            <label for="email">Champ 1</label>
+                            <input type="email" class="input-field" name="email" id=""
+                                placeholder="Exemple de placeholder super stylé genre vraiment sah">
+                        </div>
+                        <div class="input-group">
+                            <label for="pwd">Champ 2</label>
+                            <input type="password" class="input-field" name="pwd" id="">
+                        </div>
+
+                        <select class="input-field" id="select-1">
+                            <option value="" selected="selected" disabled="disabled">Select a color</option>
+                            <option value="red">Red</option>
+                            <option value="blue">Blue</option>
+                            <option value="yellow">Yellow</option>
+                        </select>
+
+                        <textarea class="input-field" placeholder="Normal textarea for multi-line input"></textarea>
+
+                        <div class="custom-checkbox">
+                            <input type="checkbox" id="checkbox-1" value="">
+                            <label for="checkbox-1">Checkbox 1</label>
+                        </div>
+
+                        <div class="custom-radio">
+                            <input type="radio" name="radio-set-1" id="radio-1" value="radio-1">
+                            <label for="radio-1">Radio 1</label>
+                        </div>
+
+                        <!-- Second radio button (checked by default) -->
+                        <div class="custom-radio">
+                            <input type="radio" name="radio-set-1" id="radio-2" checked="checked" value="radio-2">
+                            <label for="radio-2">Radio 2</label>
+                        </div>
+
+                        <!-- First switch -->
+                        <div class="custom-switch">
+                            <input type="checkbox" id="switch-1" value="">
+                            <label for="switch-1">Switch 1</label>
+                        </div>
+
+                        <button type="submit" class="button">Entrer</button>
+                    </form>
+                </div>
+
+            </div>
+        </section>
+        <section class="col-6">
+            <button class="button">Default</button>
+            <button class="button button-primary">Primary</button>
+            <button class="button button-secondary">Secondary</button>
+            <button class="button button-success">Success</button>
+            <button class="button button-danger">Danger</button>
+
+
+        </section>
+        <section>
+            <h1>Heading 1</h1>
+            <h2>Heading 2</h2>
+            <p>Paragraph</p>
+            <small>Small</small>
+            <a href="http://" target="_blank" rel="noopener noreferrer">Action</a>
+        </section>
+
+        <section>
+            <table>
+                <thead></thead>
+                <tbody></tbody>
+            </table>
+        </section>
+    </main>
+</body>
+
+</html>

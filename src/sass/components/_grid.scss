@@ -1,0 +1,44 @@
+// Mobile First
+
+.container {
+  display: block;
+
+  @media screen and (min-width: map-get($breakpoints, "md")) {
+    display: grid;
+  }
+
+  @media screen and (min-width: map-get($breakpoints, "lg")) {
+    max-width: 1024px;
+  }
+  margin: 0 auto;
+  place-content: center;
+  grid-template-columns: repeat(12, [col-start] 1fr);
+  gap: 20px;
+
+  > * {
+    grid-column: col-start / span 12;
+  }
+}
+
+.col {
+  grid-column: span 1;
+}
+.col-full {
+  grid-column: span 12;
+}
+
+@for $col from 1 through 12 {
+  .col-#{$col} {
+    grid-column: span $col;
+  }
+}
+
+@each $brk, $value in $breakpoints {
+  @media screen and (min-width: $value) {
+    @for $col from 1 through 12 {
+      .col-#{$brk}-#{$col} {
+        grid-column: span $col;
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+.card {
+  background-color: $dm-card-bg-color;
+  display: flex;
+  flex-direction: column;
+  border-radius: rem(20);
+  // margin: 2rem;
+  // width: max-content;
+  box-shadow: 0 0.125rem 1rem $dark-dark;
+  > header {
+    background-color: $dm-card-header-bg-color;
+    box-shadow: 0 0.125rem 0.5rem $dark-dark;
+    border-radius: rem(20) rem(20) 0 0;
+    width: 100%;
+    > * {
+      margin: 1.25rem;
+    }
+  }
+  > .content {
+    // margin: 0.5rem 1rem;
+    padding: 1.25rem;
+    // background-color: $dm-card-header-bg-color;
+    border-radius: rem(20);
+  }
+}
