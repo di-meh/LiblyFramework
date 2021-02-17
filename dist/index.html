@@ -24,7 +24,7 @@
 
                 pour créer un espace entre la navbar/sidebar & le contenu
      -->
-    <header class="header">
+    <!-- <header class="header">
         <nav class="navbar">
             <ul>
                 <li><span class="material-icons md-36">notifications</span></li>
@@ -32,7 +32,7 @@
                 <li><span class="material-icons md-36">face</span></li>
             </ul>
         </nav>
-    </header>
+    </header> -->
     <main class="container">
         <section class="col-6">
             <div class="card">
@@ -51,35 +51,43 @@
                             <input type="password" class="input-field" name="pwd" id="">
                         </div>
 
-                        <select class="input-field" id="select-1">
-                            <option value="" selected="selected" disabled="disabled">Select a color</option>
-                            <option value="red">Red</option>
-                            <option value="blue">Blue</option>
-                            <option value="yellow">Yellow</option>
-                        </select>
+                        <div class="input-group">
+                            <label for="select-1">Couleur</label>
+                            <select class="input-field" id="select-1">
+                                <option value="" selected="selected" disabled="disabled">Choisis une couleur</option>
+                                <option value="red">Rouge</option>
+                                <option value="blue">Bleu</option>
+                                <option value="yellow">Vert</option>
+                            </select>
+                        </div>
 
-                        <textarea class="input-field" placeholder="Normal textarea for multi-line input"></textarea>
+
+                        <div class="input-group">
+                            <label for="description">Description</label>
+                            <textarea id="description" class="input-field"
+                                placeholder="Normal textarea for multi-line input"></textarea>
+                        </div>
 
                         <div class="custom-checkbox">
-                            <input type="checkbox" id="checkbox-1" value="">
                             <label for="checkbox-1">Checkbox 1</label>
+                            <input type="checkbox" id="checkbox-1" value="">
                         </div>
 
                         <div class="custom-radio">
-                            <input type="radio" name="radio-set-1" id="radio-1" value="radio-1">
                             <label for="radio-1">Radio 1</label>
+                            <input type="radio" name="radio-set-1" id="radio-1" value="radio-1">
                         </div>
 
                         <!-- Second radio button (checked by default) -->
                         <div class="custom-radio">
-                            <input type="radio" name="radio-set-1" id="radio-2" checked="checked" value="radio-2">
                             <label for="radio-2">Radio 2</label>
+                            <input type="radio" name="radio-set-1" id="radio-2" checked="checked" value="radio-2">
                         </div>
 
                         <!-- First switch -->
                         <div class="custom-switch">
-                            <input type="checkbox" id="switch-1" value="">
                             <label for="switch-1">Switch 1</label>
+                            <input type="checkbox" id="switch-1" value="">
                         </div>
 
                         <button type="submit" class="button">Entrer</button>
@@ -88,7 +96,7 @@
 
             </div>
         </section>
-        <section class="col-6">
+        <section class="col-9">
             <button class="button">Default</button>
             <button class="button button-primary">Primary</button>
             <button class="button button-secondary">Secondary</button>
