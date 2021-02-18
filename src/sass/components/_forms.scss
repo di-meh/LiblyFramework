@@ -158,13 +158,13 @@ select.input-field:not([multiple]) {
   border-radius: rem(20);
   background-color: $gray-very-dark;
   background-image: $radio-background;
-  background-position: left rem(8) center;
+  background-position: left rem(6) center;
   background-repeat: no-repeat;
-  transition: background-position 0.25s;
+  transition: background 0.25s;
 
   &:checked {
     background-color: $primary;
-    background-position: right rem(8) center;
+    background-position: right rem(6) center;
   }
 }
 
