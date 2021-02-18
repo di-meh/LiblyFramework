@@ -215,6 +215,7 @@ form {
 textarea.input-field {
   max-width: 100%;
   min-width: 100%;
+  min-height: 3rem;
 }
 
 select.input-field:not([multiple]) {
@@ -306,13 +307,13 @@ select.input-field:not([multiple]) {
   border-radius: 1.25rem;
   background-color: #47494d;
   background-image: url('data:image/svg+xml, <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2z" fill="white"/></svg>');
-  background-position: left center;
+  background-position: left 0.5rem center;
   background-repeat: no-repeat;
   transition: background-position 0.25s;
 }
 .custom-switch input[type=checkbox]:checked {
   background-color: #1890ff;
-  background-position: right center;
+  background-position: right 0.5rem center;
 }
 
 *:disabled {

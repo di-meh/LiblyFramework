@@ -74,6 +74,7 @@ form {
 textarea.input-field {
   max-width: 100%;
   min-width: 100%;
+  min-height: 3rem;
 }
 
 select.input-field:not([multiple]) {
@@ -157,13 +158,13 @@ select.input-field:not([multiple]) {
   border-radius: rem(20);
   background-color: $gray-very-dark;
   background-image: $radio-background;
-  background-position: left center;
+  background-position: left rem(8) center;
   background-repeat: no-repeat;
   transition: background-position 0.25s;
 
   &:checked {
     background-color: $primary;
-    background-position: right center;
+    background-position: right rem(8) center;
   }
 }
 
