@@ -1,0 +1,14 @@
+.page-wrapper {
+  position: relative;
+
+  .content-wrapper {
+    position: absolute;
+    top: 4rem;
+    width: 100%;
+
+    @media screen and (min-width: map-get($breakpoints, "lg")) {
+      left: 16rem;
+      width: calc(100% - 16rem);
+    }
+  }
+}

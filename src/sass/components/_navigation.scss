@@ -3,23 +3,73 @@
   position: fixed;
   top: 0;
   left: 0;
-  align-items: center;
-  justify-content: flex-end;
-  width: 100vw;
-  background-color: $gray-very-dark;
-  z-index: 2020;
-  padding: 0 1rem;
-}
-.header .navbar ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-
+  width: 100%;
   align-items: center;
   justify-content: space-between;
+
+  @media screen and (min-width: map-get($breakpoints, "lg")) {
+    left: 16rem;
+    width: calc(100% - 16rem);
+  }
+
+  height: 4rem;
+  background-color: $gray-very-dark;
+  z-index: 2020;
+  padding: 0 2rem;
+  box-shadow: 0 0.125rem 0.5rem $dark-dark;
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .section-title {
+    margin: 0;
+    padding: 0;
+  }
 }
 
-.header {
-  display: block;
+.sidebar {
+  display: none;
+  @media screen and (min-width: map-get($breakpoints, "lg")) {
+    background-color: $gray-very-dark;
+    z-index: 2021;
+    position: fixed;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 16rem;
+    box-shadow: 0.125rem 0 0.5rem $dark-dark;
+
+    .website-title {
+      margin-left: 1.5rem;
+      margin-top: 0;
+      margin-bottom: 0;
+      height: 4rem;
+      display: flex;
+      align-items: center;
+    }
+
+    .menu-element {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      background-color: transparent;
+      transition: background 0.5s;
+
+      &:hover {
+        background-color: darken($gray-very-dark, 5%);
+      }
+
+      .element-title {
+        font-size: 24px;
+        justify-self: self-start;
+        align-self: center;
+      }
+    }
+  }
 }
