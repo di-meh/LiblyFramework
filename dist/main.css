@@ -827,15 +827,22 @@ select.input-field:not([multiple]) {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+  }
+  .sidebar .menu-element label span:first-child {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .sidebar .menu-element label .element-title {
+    margin-right: auto;
+  }
+  .sidebar .menu-element label span:last-child {
+    margin-right: 1rem;
   }
   .sidebar .menu-element label > a {
     all: unset;
     font-family: "Roboto", sans-serif;
     font-size: 24px;
     font-weight: normal;
-    justify-self: self-start;
-    align-self: center;
     cursor: pointer;
   }
   .sidebar .menu-element label > a + span {

@@ -99,15 +99,24 @@
         width: 100%;
         display: flex;
         align-items: center;
-        justify-content: space-evenly;
+        // justify-content: space-evenly;
+
+        span:first-child {
+          margin-left: 1rem;
+          margin-right: 1rem;
+        }
+        .element-title {
+          margin-right: auto;
+        }
+        span:last-child {
+          margin-right: 1rem;
+        }
 
         & > a {
           all: unset;
           font-family: $font2;
           font-size: 24px;
           font-weight: normal;
-          justify-self: self-start;
-          align-self: center;
           cursor: pointer;
 
           & + span {
