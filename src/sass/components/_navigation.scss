@@ -55,6 +55,15 @@
     width: 16rem;
     box-shadow: 0.125rem 0 0.5rem $dark-dark;
 
+    .libly-logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-bottom: 2px solid lighten($dark, 10%);
+      width: 100%;
+      height: 4rem;
+    }
+
     .website-title {
       margin-left: 1.5rem;
       margin-top: 0;
