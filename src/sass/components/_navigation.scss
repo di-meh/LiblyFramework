@@ -24,12 +24,22 @@
     padding: 0;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    li {
+      margin: 1rem;
+    }
   }
 
   .section-title {
     margin: 0;
     padding: 0;
+  }
+
+  .navbar-link {
+    > * {
+      color: $gray-very-light;
+      user-select: none;
+    }
   }
 }
 
@@ -53,22 +63,97 @@
       display: flex;
       align-items: center;
     }
-
+    // https://codepen.io/raubaca/pen/PZzpVe
     .menu-element {
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: space-around;
       background-color: transparent;
       transition: background 0.5s;
+      position: relative;
+      cursor: pointer;
+      user-select: none;
+      input[type="checkbox"] {
+        position: absolute;
+        top: 0;
+        opacity: 0;
+
+        &:checked {
+          & + label {
+            color: $primary;
+            transition: color 0.25s;
+
+            .material-icons:last-child {
+              transform: rotate(180deg);
+              transition: transform 0.25s;
+            }
+          }
+          & ~ .element-content {
+            max-height: 100%;
+          }
+        }
+      }
+
+      label {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        & > a {
+          all: unset;
+          font-family: $font2;
+          font-size: 24px;
+          font-weight: normal;
+          justify-self: self-start;
+          align-self: center;
+          cursor: pointer;
+
+          & + span {
+            visibility: hidden;
+          }
+        }
+      }
+
+      .element-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        max-height: 0;
+        overflow: hidden;
+        width: 100%;
+        // max-width: 0;
+        a {
+          margin: 1rem;
+          font-family: $font2;
+          color: $gray-very-light;
+          font-weight: lighter;
+          text-transform: none;
+          background-color: transparent;
+
+          &:hover {
+            background-color: darken(transparent, 5%);
+          }
+
+          :focus {
+            color: $primary;
+          }
+        }
+      }
 
       &:hover {
         background-color: darken($gray-very-dark, 5%);
       }
 
       .element-title {
+        font-family: $font2;
         font-size: 24px;
+        font-weight: normal;
         justify-self: self-start;
         align-self: center;
+        cursor: pointer;
       }
     }
   }

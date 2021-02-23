@@ -1,0 +1,26 @@
+.table {
+  //   border-collapse: collapse;
+
+  thead {
+    th {
+      font-family: $font2;
+      font-weight: bold;
+      padding: rem(8);
+      margin: rem(80);
+      border-radius: rem(10);
+      border: 2px solid $dark-light;
+      background-color: $gray-dark;
+    }
+  }
+  tbody {
+    th {
+      border-spacing: 0;
+      font-weight: lighter;
+      font-family: $font2;
+      padding: rem(8);
+      border-radius: rem(10);
+      border: 2px solid $dark-light;
+      background-color: $gray-dark;
+    }
+  }
+}
