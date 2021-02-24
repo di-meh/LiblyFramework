@@ -6,8 +6,10 @@
     section:not(:last-child) {
       border-right: 0;
       border-bottom: 2px solid $dark-light;
+      margin-bottom: 1rem;
       @media screen and (min-width: map-get($breakpoints, "lg")) {
         border-right: 2px solid $dark-light;
+        margin-bottom: 0;
         border-bottom: 0;
       }
     }
