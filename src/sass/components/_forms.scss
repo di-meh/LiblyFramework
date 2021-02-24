@@ -48,6 +48,9 @@ form {
     font-family: $font2;
     color: $gray;
   }
+  textarea {
+    height: 20rem;
+  }
 }
 *::placeholder {
   font-size: 14px;

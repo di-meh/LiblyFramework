@@ -175,6 +175,9 @@ form .button {
   font-family: "Roboto", sans-serif;
   color: #dadfe1;
 }
+.input-group textarea {
+  height: 20rem;
+}
 
 *::-moz-placeholder {
   font-size: 14px;
@@ -955,10 +958,10 @@ select.input-field:not([multiple]) {
 }
 
 .active {
-  color: #1890ff;
+  color: #1890ff !important;
 }
 .active * {
-  color: #1890ff;
+  color: #1890ff !important;
 }
 
 .table thead th {
@@ -1036,6 +1039,18 @@ select.input-field:not([multiple]) {
   }
   #shortcuts .content a {
     color: #f7f7f7;
+  }
+  #shortcuts .container > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #shortcuts .container > div:first-child {
+    border-right: 2px solid #25282c;
+  }
+  #shortcuts .container > div:last-child {
+    border-top: 2px solid #25282c;
   }
 }
 

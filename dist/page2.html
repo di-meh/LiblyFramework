@@ -13,13 +13,28 @@
 <body>
     <div class="page-wrapper">
         <nav class="navbar">
-            <h1 class="section-title">Section</h1>
+            <h1 class="section-title">Messagerie</h1>
             <ul>
                 <li><a href="" class="navbar-link"><span class="material-icons md-36">notifications</span></a></li>
-                <li><a href="" class="navbar-link"><span class="material-icons md-36">mail</span></a></li>
+                <li><a href="" class="navbar-link "><span class="material-icons md-36 active">mail</span></a></li>
                 <li><a href="" class="navbar-link"><span class="material-icons md-36">face</span></a></li>
             </ul>
         </nav>
+        <div class="topbar">
+            <div class="menu-element "><a href=""><span class="material-icons md-36">home</span></a>
+                <p>Accueil</p>
+            </div>
+            <div class="menu-element"><a href=""><span class="material-icons md-36">local_offer</span></a>
+                <p>Commandes</p>
+            </div>
+            <div class="menu-element"><a href=""><span class="material-icons md-36">book</span></a>
+                <p>Mes Livres</p>
+            </div>
+            <div class="menu-element"><a href=""><span class="material-icons md-36">file_copy</span></a>
+                <p>Site</p>
+            </div>
+
+        </div>
         <div class="sidebar">
             <div class="libly-logo">
                 <svg width="90" height="48" viewBox="0 0 90 48" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -51,9 +66,9 @@
             <h1 class="website-title">Votre Site</h1>
             <div class="sidebar-menu">
 
-                <div class="menu-element">
-                    <input type="checkbox" name="em2" id="em2">
-                    <label for="em2">
+                <div class="menu-element ">
+                    <input type="checkbox" name="em1" id="em1">
+                    <label for="em1">
                         <span class="material-icons md-36">home</span>
                         <a href="http://" target="_blank" rel="noopener noreferrer">
                             <h2 class="element-title">Accueil</h2>
@@ -62,30 +77,108 @@
                     </label>
                 </div>
                 <div class="menu-element">
+                    <input type="checkbox" name="em2" id="em2">
+                    <label for="em2">
+                        <span class="material-icons md-36">local_offer</span>
+                        <a href="http://" target="_blank" rel="noopener noreferrer">
+                            <h2 class="element-title">Commandes</h2>
+                        </a>
+                        <span class="material-icons md-36">expand_more</span>
+                    </label>
+                </div>
+                <div class="menu-element">
                     <input type="checkbox" name="em3" id="em3">
                     <label for="em3">
-                        <span class="material-icons md-36">home</span>
-                        <h2 class="element-title">Accueil</h2>
+                        <span class="material-icons md-36">book</span>
+                        <h2 class="element-title">Mes livres</h2>
                         <span class="material-icons md-36">expand_more</span>
                     </label>
                     <div class="element-content">
-                        <a href="">Sous-catégorie 1</a>
-                        <a href="">Sous-catégorie 2</a>
-                        <a href="">Sous-catégorie 3</a>
+                        <a href="">Bibliothèque</a>
+                        <a href="">Ajouter un livre</a>
+                        <a href="">Catégories</a>
                     </div>
                 </div>
                 <div class="menu-element">
                     <input type="checkbox" name="em4" id="em4">
                     <label for="em4">
-                        <span class="material-icons md-36">home</span>
-                        <h2 class="element-title">Accueil</h2>
+                        <span class="material-icons md-36">file_copy</span>
+                        <h2 class="element-title">Site</h2>
                         <span class="material-icons md-36">expand_more</span>
                     </label>
+                    <div class="element-content">
+                        <a href="">Thème</a>
+                        <a href="">Mes pages</a>
+                        <a href="">Articles</a>
+                    </div>
+                </div>
+                <div class="menu-element">
+                    <input type="checkbox" name="em5" id="em5">
+                    <label for="em5">
+                        <span class="material-icons md-36">group</span>
+                        <h2 class="element-title">Utilisateurs</h2>
+                        <span class="material-icons md-36">expand_more</span>
+                    </label>
+                    <div class="element-content">
+                        <a href="">Clients</a>
+                        <a href="">Employés</a>
+                    </div>
+                </div>
+                <div class="menu-element">
+                    <input type="checkbox" name="em6" id="em6">
+                    <label for="em6">
+                        <span class="material-icons md-36">settings</span>
+                        <h2 class="element-title">Paramètres</h2>
+                        <span class="material-icons md-36">expand_more</span>
+                    </label>
+                    <div class="element-content">
+                        <a href="">Votre boutique</a>
+                        <a href="">Votre compte</a>
+                    </div>
                 </div>
             </div>
         </div>
         <main class="content-wrapper">
-            <div class="container"></div>
+            <div class="container">
+                <section class="col-full">
+                    <div class="card">
+                        <header>
+                            <h1>Envoyer un message</h1>
+                        </header>
+                        <div class="content">
+                            <form>
+                                <div class="input-group">
+                                    <label for="email">Destinataire</label>
+                                    <input type="email" class="input-field" name="email" id=""
+                                        placeholder="ex: email@email.com">
+                                </div>
+                                <div class="input-group">
+                                    <label for="object">Objet</label>
+                                    <input type="text" class="input-field" name="object" id=""
+                                        placeholder="Le sujet de votre message">
+                                </div>
+
+
+                                <div class="input-group">
+                                    <label for="message">Votre message</label>
+                                    <textarea id="message" class="input-field"
+                                        placeholder="Le corps de votre message"></textarea>
+                                </div>
+
+                                <!-- First switch -->
+                                <div class="custom-switch">
+                                    <input type="checkbox" id="high-priority" value="">
+                                    <label for="high-priority">Envoyer votre message avec une importance haute</label>
+                                </div>
+
+                                <button type="submit" class="button button-success">Envoyer</button>
+                            </form>
+                        </div>
+                    </div>
+
+
+                </section>
+            </div>
         </main>
     </div>
 </body>

@@ -213,8 +213,8 @@
 }
 
 .active {
-  color: $primary;
+  color: $primary !important;
   * {
-    color: $primary;
+    color: $primary !important;
   }
 }
