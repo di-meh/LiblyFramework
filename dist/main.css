@@ -31,6 +31,10 @@
   font-size: 48px;
 }
 
+.material-icons.md-96 {
+  font-size: 96px;
+}
+
 /* Pour Light Mode */
 .material-icons.md-dark {
   color: rgba(0, 0, 0, 0.54);
@@ -108,10 +112,6 @@ body {
   display: none !important;
 }
 
-section {
-  margin: 1.25rem;
-}
-
 .page-wrapper {
   position: relative;
 }
@@ -132,6 +132,9 @@ form {
   flex-flow: column wrap;
   align-items: flex-start;
   justify-content: center;
+}
+form .button {
+  align-self: flex-end;
 }
 
 .input-group {
@@ -329,7 +332,13 @@ select.input-field:not([multiple]) {
   display: flex;
   flex-direction: column;
   border-radius: 1.25rem;
+  margin-bottom: 1.25rem;
   box-shadow: 0 0.125rem 1rem #111417;
+}
+@media screen and (min-width: 1024px) {
+  .card {
+    margin: 0;
+  }
 }
 .card > header {
   background-color: #79797a;
@@ -342,7 +351,28 @@ select.input-field:not([multiple]) {
 }
 .card > .content {
   padding: 1.25rem;
+  display: block;
   border-radius: 1.25rem;
+}
+@media screen and (min-width: 1024px) {
+  .card > .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+.card > .content .sub-card {
+  margin: 0.3125rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #79797a;
+  border-radius: 1.25rem;
+  box-shadow: 0 0.125rem 1rem #111417;
+}
+.card > .content .cta-link {
+  align-self: flex-end;
+  margin-top: 0.75rem;
 }
 
 .button {
@@ -353,7 +383,6 @@ select.input-field:not([multiple]) {
   padding: 0.625rem;
   margin: 0.3125rem;
   font-size: larger;
-  align-self: flex-end;
   font-weight: bold;
   transition: background-color 0.5s;
   position: relative;
@@ -412,8 +441,8 @@ select.input-field:not([multiple]) {
 
 .container {
   display: block;
-  width: 100%;
-  margin: 0 auto;
+  margin: 1.25rem;
+  width: calc(100% - rem(20));
 }
 @media screen and (min-width: 1024px) {
   .container {
@@ -909,4 +938,75 @@ select.input-field:not([multiple]) {
   border-radius: 0.625rem;
   border: 2px solid #25282c;
   background-color: #79797a;
+}
+
+.chart-container {
+  width: 100%;
+  height: 100%;
+}
+
+#recap .content,
+#visits .content {
+  flex-direction: row;
+  justify-content: space-between;
+}
+#recap .content section:not(:last-child),
+#visits .content section:not(:last-child) {
+  border-right: 0;
+  border-bottom: 2px solid #25282c;
+}
+@media screen and (min-width: 1024px) {
+  #recap .content section:not(:last-child),
+#visits .content section:not(:last-child) {
+    border-right: 2px solid #25282c;
+    border-bottom: 0;
+  }
+}
+#recap .content .periods,
+#visits .content .periods {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-right: 1rem;
+}
+
+#orders {
+  height: 100%;
+}
+#orders .content {
+  height: 100%;
+}
+
+#notifications .notifications-card > * {
+  margin: 1rem;
+}
+
+#shortcuts {
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  #shortcuts {
+    display: block;
+  }
+  #shortcuts .content {
+    flex-wrap: wrap;
+  }
+  #shortcuts .content a {
+    color: #f7f7f7;
+  }
+}
+
+#inventory .sub-card {
+  flex-direction: column;
+}
+#inventory .sub-card h2 {
+  border-bottom: 2px solid #25282c;
+}
+#inventory .sub-card ol {
+  font-family: "Roboto", sans-serif;
+  font-weight: lighter;
+}
+#inventory .sub-card ol li {
+  margin: 0.25rem 0;
 }

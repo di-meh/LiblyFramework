@@ -5,6 +5,10 @@ form {
   flex-flow: column wrap;
   align-items: flex-start;
   justify-content: center;
+
+  .button {
+    align-self: flex-end;
+  }
 }
 
 .input-group {

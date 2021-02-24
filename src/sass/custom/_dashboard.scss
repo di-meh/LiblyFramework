@@ -1,0 +1,69 @@
+#recap,
+#visits {
+  .content {
+    flex-direction: row;
+    justify-content: space-between;
+    section:not(:last-child) {
+      border-right: 0;
+      border-bottom: 2px solid $dark-light;
+      @media screen and (min-width: map-get($breakpoints, "lg")) {
+        border-right: 2px solid $dark-light;
+        border-bottom: 0;
+      }
+    }
+    .periods {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-right: 1rem;
+    }
+  }
+}
+
+#orders {
+  height: 100%;
+  .content {
+    height: 100%;
+  }
+}
+
+#notifications {
+  .notifications-card {
+    > * {
+      margin: rem(16);
+    }
+  }
+}
+
+#shortcuts {
+  display: none;
+  @media screen and (min-width: map-get($breakpoints, "lg")) {
+    display: block;
+
+    .content {
+      flex-wrap: wrap;
+      a {
+        color: $gray-very-light;
+      }
+    }
+  }
+}
+
+#inventory {
+  .sub-card {
+    h2 {
+      border-bottom: 2px solid $dark-light;
+    }
+    flex-direction: column;
+
+    ol {
+      font-family: $font2;
+      font-weight: lighter;
+      // align-self: flex-start;
+      li {
+        margin: rem(4) 0;
+      }
+    }
+  }
+}

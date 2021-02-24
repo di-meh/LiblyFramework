@@ -127,52 +127,179 @@
         </div>
         <main class="content-wrapper">
             <div class="container">
-                <section class="col-full">
+                <section class="col-full" id="recap">
                     <div class="card">
                         <header>
                             <h1>Récap</h1>
                         </header>
-                        <div class="content"></div>
+                        <div class="content">
+                            <div class="container">
+                                <section id="revenue" class="col-4">
+                                    <h1>Chiffre d'affaires</h1>
+                                    <p>Total de l'année</p>
+                                    <h2>42013.37 €</h2>
+                                    <div class="periods">
+                                        <div class="period">
+                                            <p>Aujourd'hui</p>
+                                            <h2>760.89 €</h2>
+                                        </div>
+                                        <div class="period">
+                                            <p>Hier</p>
+                                            <h2>400€</h2>
+                                        </div>
+                                        <div class="period">
+                                            <p>La semaine dernière</p>
+                                            <h2>1689,44€</h2>
+                                        </div>
+                                        <div class="period">
+                                            <p>Le mois dernier</p>
+                                            <h2>5919,97€</h2>
+                                        </div>
+                                    </div>
+
+                                </section>
+                                <section id="sales-books" class="col-4">
+                                    <h1>Top des ventes des livres du mois</h1>
+                                    <div class="chart-container">
+                                        <canvas id="sales-books-chart" width="400" height="200"></canvas>
+                                    </div>
+
+                                </section>
+                                <section id="sales-genres" class="col-4">
+                                    <h1>Top des ventes par genre du mois</h1>
+                                    <div class="chart-container">
+                                        <canvas id="sales-genres-chart" width="400" height="200"></canvas>
+                                    </div>
+
+                                </section>
+                            </div>
+
+                        </div>
                     </div>
                 </section>
-                <section class="col-8">
+                <section class="col-8" id="visits">
                     <div class="card">
                         <header>
                             <h1>Visites</h1>
                         </header>
-                        <div class="content"></div>
+                        <div class="content">
+                            <div class="container">
+                                <section id="visits-total" class="col-6">
+                                    <p>Total de l'année</p>
+                                    <h1>15327 visiteurs</h1>
+                                    <div class="periods">
+                                        <div class="period">
+                                            <p>Aujourd'hui</p>
+                                            <h2>553</h2>
+                                        </div>
+                                        <div class="period">
+                                            <p>Hier</p>
+                                            <h2>879</h2>
+                                        </div>
+                                        <div class="period">
+                                            <p>La semaine dernière</p>
+                                            <h2>667</h2>
+                                        </div>
+                                        <div class="period">
+                                            <p>Le mois dernier</p>
+                                            <h2>1490</h2>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section id="visits-graph" class="col-6">
+                                    <div class="chart-container">
+                                        <canvas id="visits-graph-chart" width="400" height="200"></canvas>
+                                    </div>
+                                </section>
+                            </div>
+
+                        </div>
                     </div>
                 </section>
-                <section class="col-4">
+                <section class="col-4" id="orders">
                     <div class="card">
                         <header>
                             <h1>Commandes</h1>
                         </header>
-                        <div class="content"></div>
+                        <div class="content">
+                            <p>Vous avez reçu 3 commandes dans la dernière heure et il vous en reste 6 à traiter.</p>
+                            <a href="" class="cta-link">Accéder aux commandes</a>
+                        </div>
                     </div>
                 </section>
-                <section class="col-5">
+                <section class="col-4" id="shortcuts">
                     <div class="card">
                         <header>
                             <h1>Raccourcis</h1>
                         </header>
-                        <div class="content"></div>
+                        <div class="content">
+                            <div class="container">
+                                <div class="col-6">
+                                    <h2>Ajouter un livre</h2>
+                                    <a href=""><span class="material-icons md-96">book</span></a>
+
+                                </div>
+                                <div class="col-6">
+                                    <h2>Ajouter une catégorie</h2>
+                                    <a href=""><span class="material-icons md-96">all_inbox</span></a>
+
+                                </div>
+                                <div class="col-full">
+                                    <h2>Publier une newsletter</h2>
+                                    <a href=""><span class="material-icons md-96">drafts</span></a>
+
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </section>
-                <section class="col-2">
-                    <div class="card">
+                <section class="col-3">
+                    <div class="card" id="inventory">
                         <header>
                             <h1>Inventaire</h1>
                         </header>
-                        <div class="content"></div>
+                        <div class="content">
+                            <div class="sub-card">
+                                <h2>Dernière vente</h2>
+                                <ol>
+                                    <li>Un super livre</li>
+                                    <li>Un autre super livre</li>
+                                    <li>Et encore un autre</li>
+                                </ol>
+                            </div>
+                            <div class="sub-card">
+                                <h2>Nouveaux stocks</h2>
+                                <ol>
+                                    <li>Un super livre</li>
+                                    <li>Un autre super livre</li>
+                                    <li>Et encore un autre</li>
+                                </ol>
+                            </div>
+                        </div>
                     </div>
                 </section>
-                <section class="col-5">
+                <section class="col-5" id="notifications">
                     <div class="card">
                         <header>
                             <h1>Notifications</h1>
                         </header>
-                        <div class="content"></div>
+                        <div class="content">
+                            <div class="sub-card notifications-card">
+                                <p>Vous avez reçu 3 commandes dans la dernière heure, et il vous en reste 6 à traiter.
+                                </p><a href="">Voir</a>
+                            </div>
+                            <div class="sub-card notifications-card">
+                                <p>3 utilisateurs ont posté des commentaires à propos de votre livre "L'art de la
+                                    guerre" de Sun Tzu.
+                                </p><a href="">Voir</a>
+                            </div>
+                            <div class="sub-card notifications-card">
+                                <p>Vous avez 5 messages non lus dans la section "Messages" de vos notifications.
+                                </p><a href="">Voir</a>
+                            </div>
+
+                            <a href="" class="cta-link">Accéder aux notifications</a>
+                        </div>
                     </div>
                 </section>
 

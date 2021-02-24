@@ -2,8 +2,8 @@
 
 .container {
   display: block;
-  width: 100%;
-  margin: 0 auto;
+  margin: rem(20);
+  width: calc(100% - rem(20));
   @each $brk, $value in breakpoints {
     @media screen and (min-width: $value) {
       max-width: $value;
