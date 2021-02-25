@@ -27,6 +27,14 @@ $context_colors: (
       }
     }
   }
+
+  &-rounded {
+    font-family: $font3;
+    text-transform: uppercase;
+    border-radius: rem(20);
+    padding: rem(5);
+    font-size: 16px;
+  }
 }
 
 // Buttons de sidebar

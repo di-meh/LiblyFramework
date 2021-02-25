@@ -439,6 +439,13 @@ select.input-field:not([multiple]) {
 .button-danger:hover {
   background-color: #fabbb8;
 }
+.button-rounded {
+  font-family: "Roboto Mono", monospace;
+  text-transform: uppercase;
+  border-radius: 1.25rem;
+  padding: 0.3125rem;
+  font-size: 16px;
+}
 
 .expand-element {
   all: unset;
@@ -965,23 +972,33 @@ select.input-field:not([multiple]) {
   color: #5897e9 !important;
 }
 
-.table thead th {
-  font-family: "Roboto", sans-serif;
-  font-weight: bold;
+.table {
+  width: 100%;
+  text-align: center;
+  border-spacing: 0 10px;
+}
+.table th, .table td {
   padding: 0.5rem;
   margin: 5rem;
-  border-radius: 0.625rem;
-  border: 2px solid #4a4a4a;
-  background-color: #696969;
-}
-.table tbody th {
-  border-spacing: 0;
-  font-weight: lighter;
   font-family: "Roboto", sans-serif;
-  padding: 0.5rem;
-  border-radius: 0.625rem;
-  border: 2px solid #4a4a4a;
   background-color: #696969;
+  border-bottom: 2px solid #4a4a4a;
+  border-top: 2px solid #4a4a4a;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.table td:last-child, .table th:last-child {
+  border-top-right-radius: 0.625rem;
+  border-bottom-right-radius: 0.625rem;
+  border-right: 2px solid #4a4a4a;
+}
+.table td:not(td:last-child, td:first-child), .table th:not(th:last-child, th:first-child) {
+  border-right: 2px solid #4a4a4a;
+}
+.table td:first-child, .table th:first-child {
+  border-top-left-radius: 0.625rem;
+  border-bottom-left-radius: 0.625rem;
+  border-left: 2px solid #4a4a4a;
+  border-right: 2px solid #4a4a4a;
 }
 
 .chart-container {
