@@ -251,7 +251,6 @@ select.input-field:not([multiple]) {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  white-space: nowrap;
   margin-left: 0.5rem;
   padding: 0.5rem;
   border-radius: 0.625rem;
@@ -305,6 +304,7 @@ select.input-field:not([multiple]) {
      -moz-appearance: none;
           appearance: none;
   outline: none;
+  flex-shrink: 0;
   padding: 0.5rem;
   margin: 0;
   height: 2.4rem;

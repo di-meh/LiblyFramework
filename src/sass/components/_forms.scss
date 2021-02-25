@@ -106,7 +106,6 @@ select.input-field:not([multiple]) {
     display: inline-block;
     position: relative;
     user-select: none;
-    white-space: nowrap;
     margin-left: 0.5rem;
     padding: rem(8);
     border-radius: rem(10);
@@ -157,6 +156,7 @@ select.input-field:not([multiple]) {
 .custom-switch input[type="checkbox"] {
   appearance: none;
   outline: none;
+  flex-shrink: 0;
   padding: rem(8);
   margin: 0;
   height: 2.4rem;
