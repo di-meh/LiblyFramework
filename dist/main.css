@@ -4,6 +4,21 @@
 @import url(https://fonts.googleapis.com/icon?family=Material+Icons);
 @charset "UTF-8";
 /* 
+------------------------------------------------------------------------
+    Le fichier main, où tous les components sont chargés
+------------------------------------------------------------------------
+*/
+/* 
+------------------------------------------------------------------------
+    L'ensemble des styles globaux
+------------------------------------------------------------------------
+*/
+/* 
+------------------------------------------------------------------------
+    Des fonctions et mixins réutilisables à travers tous les components
+------------------------------------------------------------------------
+*/
+/* 
 ----------------------------------------------------
     Palette de couleurs
 ----------------------------------------------------
@@ -13,7 +28,16 @@
 /* Couleurs de thème */
 /* Dark Mode */
 /* Light Mode (In Progress) */
-/* Fonts */
+/* 
+------------------------------------------------------------------------
+    Les styles appliqués aux textes
+------------------------------------------------------------------------
+*/
+/* 
+------------------------------------------------------------------------
+    Les polices d'écriture utilisées.
+------------------------------------------------------------------------
+*/
 /* Tailles d'icônes. */
 .material-icons.md-18 {
   font-size: 18px;
@@ -97,6 +121,16 @@ a {
   font-weight: bolder;
 }
 
+/* 
+------------------------------------------------------------------------
+    Des variables réutilisables à travers tout le code scss.
+------------------------------------------------------------------------
+*/
+/* 
+------------------------------------------------------------------------
+    Des styles de base pour "normaliser" les éléments qui en ont besoin
+------------------------------------------------------------------------
+*/
 * {
   box-sizing: border-box;
 }
@@ -113,6 +147,11 @@ body {
   display: none !important;
 }
 
+/* 
+------------------------------------------------------------------------
+    Les sections par défaut de chaque page.
+------------------------------------------------------------------------
+*/
 .page-wrapper {
   position: relative;
 }
@@ -129,6 +168,12 @@ body {
   }
 }
 
+/* 
+------------------------------------------------------------------------
+    Des styles pour les formulaires et les inputs de base:
+    radio, checkbox, switch, textarea, select, input...
+------------------------------------------------------------------------
+*/
 form {
   display: flex;
   flex-flow: column wrap;
@@ -332,6 +377,11 @@ select.input-field:not([multiple]) {
   opacity: 0.5;
 }
 
+/* 
+--------------------------------------------------------------------------------
+    Un component de base de notre design: la "card" avec un titre et un contenu
+--------------------------------------------------------------------------------
+*/
 .card {
   background-color: #565555;
   display: flex;
@@ -380,6 +430,11 @@ select.input-field:not([multiple]) {
   margin-top: 0.75rem;
 }
 
+/* 
+------------------------------------------------------------------------
+    Les boutons
+------------------------------------------------------------------------
+*/
 .button {
   border-radius: 0.5rem;
   color: #4a4a4a;
@@ -451,6 +506,11 @@ select.input-field:not([multiple]) {
   all: unset;
 }
 
+/* 
+------------------------------------------------------------------------
+    Une grille de 12 colonnes en CSS Grid qui, en mobile, bascule en Block.
+------------------------------------------------------------------------
+*/
 .container {
   display: block;
   margin: 1.25rem;
@@ -769,6 +829,11 @@ select.input-field:not([multiple]) {
     grid-column: span 12;
   }
 }
+/* 
+------------------------------------------------------------------------
+    Les styles liés aux navbars et aux sidebars.
+------------------------------------------------------------------------
+*/
 .navbar {
   display: flex;
   position: fixed;
@@ -972,12 +1037,18 @@ select.input-field:not([multiple]) {
   color: #5897e9 !important;
 }
 
+/* 
+------------------------------------------------------------------------
+    Les tableaux.
+------------------------------------------------------------------------
+*/
 .table {
   width: 100%;
   text-align: center;
   border-spacing: 0 10px;
 }
-.table th, .table td {
+.table th,
+.table td {
   padding: 0.5rem;
   margin: 5rem;
   font-family: "Roboto", sans-serif;
@@ -986,26 +1057,31 @@ select.input-field:not([multiple]) {
   border-top: 2px solid #4a4a4a;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.table td:last-child, .table th:last-child {
+.table td:last-child,
+.table th:last-child {
   border-top-right-radius: 0.625rem;
   border-bottom-right-radius: 0.625rem;
   border-right: 2px solid #4a4a4a;
 }
-.table td:not(td:last-child, td:first-child), .table th:not(th:last-child, th:first-child) {
+.table td:not(td:last-child, td:first-child),
+.table th:not(th:last-child, th:first-child) {
   border-right: 2px solid #4a4a4a;
 }
-.table td:first-child, .table th:first-child {
+.table td:first-child,
+.table th:first-child {
   border-top-left-radius: 0.625rem;
   border-bottom-left-radius: 0.625rem;
   border-left: 2px solid #4a4a4a;
   border-right: 2px solid #4a4a4a;
 }
 
-.chart-container {
-  width: 100%;
-  height: 100%;
-}
-
+/* 
+------------------------------------------------------------------------
+    Les charts de chart.js nous rendent la vie difficile, du coup 
+    voilà des styles à appliquer si jamais le responsive des canvas
+    ne se produit pas correctement
+------------------------------------------------------------------------
+*/
 #recap .content,
 #visits .content {
   flex-direction: row;

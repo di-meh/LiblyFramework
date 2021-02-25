@@ -1,9 +1,16 @@
+/* 
+------------------------------------------------------------------------
+    Les tableaux.
+------------------------------------------------------------------------
+*/
+
 .table {
   width: 100%;
-	text-align:center;
+  text-align: center;
   border-spacing: 0 10px;
 
-  th,td {
+  th,
+  td {
     padding: rem(8);
     margin: rem(80);
     font-family: $font2;
@@ -13,15 +20,18 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
 
-  td:last-child,th:last-child {
+  td:last-child,
+  th:last-child {
     border-top-right-radius: rem(10);
     border-bottom-right-radius: rem(10);
     border-right: 2px solid $dark-light;
   }
-  td:not(td:last-child,td:first-child),th:not(th:last-child,th:first-child) {
+  td:not(td:last-child, td:first-child),
+  th:not(th:last-child, th:first-child) {
     border-right: 2px solid $dark-light;
   }
-  td:first-child, th:first-child {
+  td:first-child,
+  th:first-child {
     border-top-left-radius: rem(10);
     border-bottom-left-radius: rem(10);
     border-left: 2px solid $dark-light;

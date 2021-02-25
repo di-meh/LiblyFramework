@@ -1,5 +1,9 @@
-// TODO: Mieux gérer la répétition de code: DRY, avec des include ou des apply
-
+/* 
+------------------------------------------------------------------------
+    Des styles pour les formulaires et les inputs de base:
+    radio, checkbox, switch, textarea, select, input...
+------------------------------------------------------------------------
+*/
 form {
   display: flex;
   flex-flow: column wrap;

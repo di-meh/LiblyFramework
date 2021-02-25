@@ -1,5 +1,8 @@
-// Mobile First
-
+/* 
+------------------------------------------------------------------------
+    Une grille de 12 colonnes en CSS Grid qui, en mobile, bascule en Block.
+------------------------------------------------------------------------
+*/
 .container {
   display: block;
   margin: rem(20);
