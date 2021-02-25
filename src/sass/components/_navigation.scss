@@ -13,7 +13,7 @@
   }
 
   height: 4rem;
-  background-color: $gray-very-dark;
+  background-color: $dark;
   z-index: 2020;
   padding: 0 2rem;
   box-shadow: 0 0.125rem 0.5rem $dark-dark;
@@ -72,7 +72,7 @@
 
     span {
       padding: 0.25rem;
-      background-color: $gray-very-dark;
+      background-color: $dark;
       border-radius: rem(6);
     }
   }
@@ -81,7 +81,7 @@
 .sidebar {
   display: none;
   @media screen and (min-width: map-get($breakpoints, "lg")) {
-    background-color: $gray-very-dark;
+    background-color: $dark;
     z-index: 2021;
     position: fixed;
     height: 100%;

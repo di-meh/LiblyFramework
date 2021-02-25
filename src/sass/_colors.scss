@@ -6,23 +6,23 @@
 
 /* Couleurs de base */
 
-$dark: #191c20;
-$dark-light: #25282c;
-$dark-dark: #111417;
+$dark: #3e3e3e;
+$dark-light: #4a4a4a;
+$dark-dark: #343434;
 
 $gray: #dadfe1;
 $gray-light: #ecf0f1;
-$gray-very-light: #f7f7f7;
-$gray-dark: #79797a;
-$gray-very-dark: #47494d;
+$gray-very-light: #f2f2f2;
+$gray-dark: #696969;
+$gray-very-dark: #565555;
 
-$blue: #1890ff;
-$indigo: #6563ff;
+$blue: #5897e9;
+$indigo: #a17af5;
 $teal: #38b2ac;
-$green: #0be881;
-$yellow: #ffcf00;
-$orange: #ed8936;
-$red: #ff4d4f;
+$green: #8efb6d;
+$yellow: #f8d859;
+$orange: #ea9649;
+$red: #f46058;
 $pink: #ed64a6;
 
 /* Couleurs de contexte */
@@ -36,14 +36,14 @@ $danger: $red;
 
 /* Dark Mode */
 
-$dm-base-bg-color: $dark;
+$dm-base-bg-color: $dark-dark;
 $dm-menu-bg-color: $gray-very-dark;
 $dm-card-bg-color: $gray-very-dark;
 $dm-card-header-bg-color: $gray-dark;
 $dm-input-bg-color: $dark-light;
 $dm-main-text-color: $gray-very-light;
 
-/* Light Mode */
+/* Light Mode (In Progress) */
 
 $lm-base-bg-color: $gray-very-light;
 $lm-menu-bg-color: $gray-light;
