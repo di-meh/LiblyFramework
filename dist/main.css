@@ -1040,6 +1040,9 @@ select.input-field:not([multiple]) {
   #shortcuts .content a {
     color: #f7f7f7;
   }
+  #shortcuts .container {
+    gap: 0;
+  }
   #shortcuts .container > div {
     display: flex;
     flex-direction: column;
@@ -1048,6 +1051,7 @@ select.input-field:not([multiple]) {
   }
   #shortcuts .container > div:first-child {
     border-right: 2px solid #25282c;
+    height: 100%;
   }
   #shortcuts .container > div:last-child {
     border-top: 2px solid #25282c;

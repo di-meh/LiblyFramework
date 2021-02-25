@@ -50,6 +50,7 @@
       }
     }
     .container {
+      gap: 0;
       > div {
         display: flex;
         flex-direction: column;
@@ -58,6 +59,7 @@
 
         &:first-child {
           border-right: 2px solid $dark-light;
+          height: 100%;
         }
         &:last-child {
           border-top: 2px solid $dark-light;
