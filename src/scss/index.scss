@@ -1,0 +1,14 @@
+// Vendor
+@use 'vendor';
+@use 'variables';
+@use 'typography';
+@use 'mixins';
+@use 'utilities';
+@use 'layout';
+@use 'forms';
+@use 'components';
+
+body {
+  background-color: variables.$gray-800;
+  color: variables.$white;
+}
