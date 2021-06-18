@@ -1,14 +1,13 @@
 // Vendor
-@use 'vendor';
-@use 'variables';
-@use 'typography';
-@use 'mixins';
-@use 'utilities';
-@use 'layout';
-@use 'forms';
-@use 'components';
-
+@import "mixins";
+@import "normalize";
+@import "variables";
+@import "typography";
+@import "utilities";
+@import "layout";
+@import "forms";
+@import "components";
 body {
-  background-color: variables.$gray-800;
-  color: variables.$white;
+  background-color: $gray-700;
+  color: $white;
 }

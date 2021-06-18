@@ -1,0 +1,13 @@
+@import "../../../node_modules/modern-normalize/modern-normalize";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+  @include remove-link-style;
+}
