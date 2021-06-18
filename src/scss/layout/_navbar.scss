@@ -1,0 +1,25 @@
+@use "sass:math";
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  left: 6rem;
+  background-color: $gray-800;
+  height: 4rem;
+  width: calc(100% - 6rem);
+
+  &-title {
+    margin-left: 1rem;
+  }
+
+  &-right {
+    margin-right: 1rem;
+    display: flex;
+
+    & > * {
+      margin: 0 0.5rem;
+    }
+  }
+}

@@ -1,6 +1,6 @@
-@forward 'cards';
-@forward 'containers';
-@forward 'grid';
-@forward 'navbar';
-@forward 'page-layout';
-@forward 'sidebar';
+@import "cards";
+@import "containers";
+@import "grid";
+@import "navbar";
+@import "page-layout";
+@import "sidebar";
