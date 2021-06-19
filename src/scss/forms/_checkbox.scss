@@ -1,0 +1,71 @@
+// $checkbox-width: 1.8rem;
+// $checkbox-height: 1.8rem;
+// $round-size: 1.2rem;
+
+.custom-checkbox {
+  position: relative;
+  display: block;
+  line-height: 1.8rem;
+  input[type="checkbox"] {
+    @include hide-input;
+
+    &:checked ~ label {
+      &::before {
+        background-color: #1890ff;
+        border-color: #1890ff;
+      }
+      &::after {
+        display: block;
+
+        // top: 0.4rem;
+        // left: calc(#{$checkbox-width} - #{$round-size} - 0.5rem);
+        // background-color: #ffffff;
+        // border-color: #ffffff;
+      }
+    }
+    &:disabled ~ label {
+      opacity: 0.6;
+      cursor: not-allowed;
+      &::before {
+        background-color: #ffffff;
+        border-color: rgba(0, 0, 0, 0.3);
+      }
+    }
+  }
+  label {
+    display: inline-block;
+    cursor: pointer;
+    user-select: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    // Padding left ?
+    padding-left: 2.5rem;
+    font-family: $secondary-font;
+
+    &::before {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      height: 1.8rem;
+      width: 1.8rem;
+      top: 0;
+      left: 0;
+      background-color: #ffffff;
+      border: 2px solid $gray-700;
+      border-radius: 0.4rem;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      display: none;
+      height: 1rem;
+      width: 0.6rem;
+      left: 0.6rem;
+      top: 0.3rem;
+      border: solid #ffffff;
+      border-width: 0 0.2rem 0.2rem 0;
+      transform: rotate(45deg);
+    }
+  }
+}

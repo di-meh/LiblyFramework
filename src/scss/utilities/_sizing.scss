@@ -15,7 +15,7 @@ $sizing-utilities: (
   @each $property, $class, $values in $element {
     @each $name, $value in $values {
       .s-#{$class}-#{$name} {
-        #{$property}: $value;
+        #{$property}: $value !important;
       }
     }
   }

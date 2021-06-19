@@ -1,7 +1,7 @@
 $flex-utilities: (
   "flex-direction": (
     flex-direction,
-    "flex-direction",
+    "direction",
     row column row-reverse column-reverse,
   ),
   "justify-content": (
@@ -20,7 +20,7 @@ $flex-utilities: (
   @each $property, $class, $values in $element {
     @each $value in $values {
       .flex-#{$class}-#{$value} {
-        #{$property}: $value;
+        #{$property}: $value !important;
       }
     }
   }

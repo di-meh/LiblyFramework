@@ -1,0 +1,14 @@
+$z-index-utilities: (
+  "0": 0,
+  "1": 1,
+  "100": 100,
+  "2000": 2000,
+  "2020": 2020,
+  "2021": 2021,
+);
+
+@each $nb, $value in $z-index-utilities {
+  .z-#{$nb} {
+    z-index: $value !important;
+  }
+}

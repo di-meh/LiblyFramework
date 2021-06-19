@@ -15,7 +15,7 @@ $color-utilities: (
   @each $property, $class, $values in $el {
     @each $nb, $value in $values {
       .c-#{$property}-#{$nb} {
-        #{$property}: $value;
+        #{$property}: $value !important;
       }
     }
   }

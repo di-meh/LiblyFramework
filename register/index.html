@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+
+<body>
+    <section
+        class="d-flex flex-direction-column flex-align-items-center flex-justify-content-center s-w-full s-h-h-screen">
+        <div class="card s-w-350">
+            <h6 class="card-title">S'inscrire</h6>
+            <div class="card-content">
+                <form>
+                    <div class="input-group">
+                        <label for="prenom">Prénom</label>
+                        <input type="text" class="input-field" name="prenom" id="prenom" placeholder="Antoine">
+                    </div>
+                    <div class="input-group">
+                        <label for="nom">Nom</label>
+                        <input type="text" class="input-field" name="nom" id="nom" placeholder="Briscault">
+                    </div>
+                    <div class="input-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="input-field" name="email" id="email" placeholder="antoine@test.com">
+                    </div>
+                    <div class="input-group">
+                        <label for="select-1">Pays</label>
+                        <select class="input-field" id="select-1">
+                            <option value="" selected="selected" disabled="disabled">Choisis un pays
+                            </option>
+                            <option value="france">France</option>
+                            <option value="espagne">Espagne</option>
+                            <option value="belgique">Belgique</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label for="pwd">Mot de passe</label>
+                        <input type="password" class="input-field" name="pwd" id="password">
+                    </div>
+                    <div class="input-group">
+                        <label for="pwd">Confirmation du mot de passe</label>
+                        <input type="password" class="input-field" name="confpwd" id="confpassword">
+                    </div>
+                    <button type="submit" class="btn">S'inscrire</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <script type="module" src="/main.js"></script>
+</body>
+
+</html>
