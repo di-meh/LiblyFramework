@@ -1,0 +1,27 @@
+$text-utilities: (
+  "font-size": (
+    font-size,
+    "font-size",
+    $letter-font-sizes,
+  ),
+  "font-weight": (
+    font-weight,
+    "font-weight",
+    (
+      "lighter": lighter,
+      "normal": normal,
+      "bold": bold,
+      "bolder": bolder,
+    ),
+  ),
+);
+
+@each $el in $text-utilities {
+  @each $property, $class, $values in $el {
+    @each $nb, $value in $values {
+      .t-#{$class}-#{$nb} {
+        #{$property}: $value;
+      }
+    }
+  }
+}

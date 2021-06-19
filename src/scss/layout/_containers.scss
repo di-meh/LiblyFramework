@@ -1,3 +1,22 @@
 .container {
   width: 100%;
+
+  @each $brk, $value in $breakpoints {
+    @media screen and (min-width: $value) {
+      max-width: $value;
+    }
+  }
+
+  @each $brk, $value in $breakpoints {
+    @at-root &-#{$brk} {
+      max-width: $value;
+      @media screen and (max-width: $value) {
+        max-width: 100%;
+      }
+    }
+  }
+
+  @at-root &-fluid {
+    max-width: 100%;
+  }
 }

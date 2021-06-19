@@ -1,0 +1,27 @@
+$flex-utilities: (
+  "flex-direction": (
+    flex-direction,
+    "flex-direction",
+    row column row-reverse column-reverse,
+  ),
+  "justify-content": (
+    justify-content,
+    "justify-content",
+    flex-start flex-end center space-between space-around space-evenly,
+  ),
+  "align-items": (
+    align-items,
+    "align-items",
+    flex-start flex-end center baseline stretch,
+  ),
+);
+
+@each $element in $flex-utilities {
+  @each $property, $class, $values in $element {
+    @each $value in $values {
+      .flex-#{$class}-#{$value} {
+        #{$property}: $value;
+      }
+    }
+  }
+}

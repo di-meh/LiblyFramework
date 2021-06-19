@@ -1,0 +1,39 @@
+$gutter: 1.5rem;
+$columns: 12;
+
+.row {
+  display: grid;
+  grid-template-columns: repeat($columns, [col-start] 1fr);
+  gap: calc(#{$gutter} / 2);
+
+  @media screen and (min-width: map-get($map: $breakpoints, $key: "lg")) {
+    gap: $gutter;
+  }
+  margin: $gutter;
+
+  .col {
+    grid-column: span 1;
+  }
+  .col-full {
+    grid-column: span 12;
+  }
+  .col-auto {
+    grid-column: auto;
+  }
+
+  @for $col from 1 through 12 {
+    .col-#{$col} {
+      grid-column: span $col;
+    }
+  }
+
+  @each $brk, $value in $breakpoints {
+    @media screen and (min-width: $value) {
+      @for $col from 1 through 12 {
+        .col-#{$brk}-#{$col} {
+          grid-column: span $col;
+        }
+      }
+    }
+  }
+}

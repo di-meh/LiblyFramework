@@ -11,3 +11,7 @@ a:focus,
 a:active {
   @include remove-link-style;
 }
+
+a:hover {
+  color: $blue;
+}

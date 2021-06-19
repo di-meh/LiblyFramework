@@ -7,3 +7,15 @@
   text-decoration: none;
   color: inherit;
 }
+@mixin media($mf: true, $breakpoint: "sm", $property, $defvalue, $newvalue) {
+  #{$property}: $defvalue;
+  @if $mf {
+    @media screen and (min-width: map-get($map: $breakpoints, $key: $breakpoint)) {
+      #{$property}: $newvalue;
+    }
+  } @else {
+    @media screen and (max-width: map-get($map: $breakpoints, $key: $breakpoint)) {
+      #{$property}: $newvalue;
+    }
+  }
+}
