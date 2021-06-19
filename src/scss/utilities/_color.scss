@@ -1,0 +1,22 @@
+$color-utilities: (
+  "color": (
+    color,
+    "text",
+    map-merge($colors, $theme-colors),
+  ),
+  "background-color": (
+    background-color,
+    "bg",
+    map-merge($colors, $theme-colors),
+  ),
+);
+
+@each $el in $color-utilities {
+  @each $property, $class, $values in $el {
+    @each $nb, $value in $values {
+      .c-#{$property}-#{$nb} {
+        #{$property}: $value;
+      }
+    }
+  }
+}

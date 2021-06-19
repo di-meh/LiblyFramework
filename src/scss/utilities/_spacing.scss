@@ -1,0 +1,119 @@
+$spacing-utilities: (
+  "padding": (
+    padding,
+    p,
+    $spacers,
+  ),
+  "padding-x": (
+    padding-right padding-left,
+    px,
+    $spacers,
+  ),
+  "padding-y": (
+    padding-top padding-bottom,
+    py,
+    $spacers,
+  ),
+  "padding-top": (
+    padding-top,
+    pt,
+    $spacers,
+  ),
+  "padding-end": (
+    padding-right,
+    pr,
+    $spacers,
+  ),
+  "padding-bottom": (
+    padding-bottom,
+    pb,
+    $spacers,
+  ),
+  "padding-start": (
+    padding-left,
+    pl,
+    $spacers,
+  ),
+  "margin": (
+    margin,
+    m,
+    map-merge(
+      $spacers,
+      (
+        auto: auto,
+      )
+    ),
+  ),
+  "margin-x": (
+    margin-right margin-left,
+    mx,
+    map-merge(
+      $spacers,
+      (
+        auto: auto,
+      )
+    ),
+  ),
+  "margin-y": (
+    margin-top margin-bottom,
+    my,
+    map-merge(
+      $spacers,
+      (
+        auto: auto,
+      )
+    ),
+  ),
+  "margin-top": (
+    margin-top,
+    mt,
+    map-merge(
+      $spacers,
+      (
+        auto: auto,
+      )
+    ),
+  ),
+  "margin-end": (
+    margin-right,
+    mr,
+    map-merge(
+      $spacers,
+      (
+        auto: auto,
+      )
+    ),
+  ),
+  "margin-bottom": (
+    margin-bottom,
+    mb,
+    map-merge(
+      $spacers,
+      (
+        auto: auto,
+      )
+    ),
+  ),
+  "margin-start": (
+    margin-left,
+    ml,
+    map-merge(
+      $spacers,
+      (
+        auto: auto,
+      )
+    ),
+  ),
+);
+
+@each $el in $spacing-utilities {
+  @each $properties, $class, $values in $el {
+    @each $nb, $value in $values {
+      .sp-#{$class}-#{$nb} {
+        @each $property in $properties {
+          #{$property}: $value;
+        }
+      }
+    }
+  }
+}

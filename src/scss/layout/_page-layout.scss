@@ -1,7 +1,25 @@
 .content-wrapper {
   position: absolute;
-  left: 6rem;
-  top: 4rem;
-  width: calc(100% - 6rem);
-  height: calc(100% - 4rem);
+  // left: $small-sidebar-width;
+  top: $navbar-height;
+  width: calc(100% - #{$small-sidebar-width});
+  height: calc(100% - #{$navbar-height});
+
+  @include media(
+    $breakpoint: "lg",
+    $property: "left",
+    $defvalue: $small-sidebar-width,
+    $newvalue: $big-sidebar-width
+  );
+  @include media(
+    $breakpoint: "lg",
+    $property: "width",
+    $defvalue: calc(100% - #{$small-sidebar-width}),
+    $newvalue: calc(100% - #{$big-sidebar-width})
+  );
+
+  // @media screen and (min-width: map-get($map: $breakpoints, $key: "lg")) {
+  //   left: $big-sidebar-width;
+  //   width: calc(100% - $big-sidebar-width);
+  // }
 }
