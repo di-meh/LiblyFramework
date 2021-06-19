@@ -13,21 +13,34 @@ span {
 
 // Scale officielle du Material Design
 
-h1 {
-  font-size: 96px;
+// h1 {
+//   font-size: 96px;
+// }
+// h2 {
+//   font-size: 60px;
+// }
+// h3 {
+//   font-size: 48px;
+// }
+// h4 {
+//   font-size: 34px;
+// }
+// h5 {
+//   font-size: 24px;
+// }
+// h6 {
+//   font-size: 20px;
+// }
+
+@each $number, $value in $letter-font-sizes {
+  h#{$number},
+  .h#{$number} {
+    font-size: $value;
+  }
 }
-h2 {
-  font-size: 60px;
-}
-h3 {
-  font-size: 48px;
-}
-h4 {
-  font-size: 34px;
-}
-h5 {
-  font-size: 24px;
-}
-h6 {
-  font-size: 20px;
+
+@each $number, $value in $display-font-sizes {
+  .display-#{$number} {
+    font-size: $value;
+  }
 }

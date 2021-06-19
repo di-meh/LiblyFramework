@@ -1,0 +1,54 @@
+.custom-radio {
+  display: block;
+  position: relative;
+  line-height: 1.6rem;
+
+  margin-top: 0.8rem;
+
+  input[type="radio"] {
+    @include hide-input;
+
+    &:checked ~ label {
+      &::before {
+        background-color: #1890ff;
+        border-color: #1890ff;
+      }
+      &::after {
+        display: block;
+      }
+    }
+  }
+
+  label {
+    display: inline-block;
+    margin-bottom: 0;
+    padding-left: 2.5rem;
+    cursor: pointer;
+    user-select: none;
+    font-family: $secondary-font;
+
+    &::before {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      height: 1.6rem;
+      width: 1.6rem;
+      top: 0;
+      left: 0;
+      background-color: #ffffff;
+      border: 2px solid $gray-700;
+      border-radius: 50%;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      display: none;
+      top: 0.5rem;
+      left: 0.5rem;
+      width: 0.6rem;
+      height: 0.6rem;
+      background-color: #ffffff;
+      border-radius: 50%;
+    }
+  }
+}

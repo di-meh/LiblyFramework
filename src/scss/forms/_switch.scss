@@ -1,0 +1,60 @@
+$switch-width: 3.2rem;
+$switch-height: 2rem;
+$round-size: 1.2rem;
+
+.custom-switch {
+  position: relative;
+  display: block;
+  line-height: $switch-height;
+  input[type="checkbox"] {
+    @include hide-input;
+
+    &:checked ~ label {
+      &::before {
+        background-color: #1890ff;
+        border-color: #1890ff;
+      }
+      &::after {
+        top: 0.4rem;
+        left: calc(#{$switch-width} - #{$round-size} - 0.5rem);
+        background-color: #ffffff;
+        border-color: #ffffff;
+      }
+    }
+  }
+  label {
+    font-family: $secondary-font;
+    cursor: pointer;
+    user-select: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    // Padding left ?
+    padding-left: calc(#{$switch-width} + 1rem);
+
+    &::before {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      height: $switch-height;
+      width: $switch-width;
+      top: 0;
+      left: 0;
+      background-color: #ffffff;
+      border: 2px solid $gray-700;
+      border-radius: 2rem;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      height: $round-size;
+      width: $round-size;
+      top: 0.4rem;
+      left: 0.5rem;
+      background-color: rgba(0, 0, 0, 0.2);
+      border: 0 solid rgba(0, 0, 0, 0.2);
+      border-radius: 50%;
+      transition: left 0.1s;
+    }
+  }
+}

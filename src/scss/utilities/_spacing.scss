@@ -111,7 +111,7 @@ $spacing-utilities: (
     @each $nb, $value in $values {
       .sp-#{$class}-#{$nb} {
         @each $property in $properties {
-          #{$property}: $value;
+          #{$property}: $value !important;
         }
       }
     }

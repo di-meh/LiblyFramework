@@ -2,6 +2,6 @@ $display-utilities: none block inline inline-block flex inline-flex grid;
 
 @each $value in $display-utilities {
   .d-#{$value} {
-    display: $value;
+    display: $value !important;
   }
 }

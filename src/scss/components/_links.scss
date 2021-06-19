@@ -1,0 +1,14 @@
+a,
+a:hover,
+a:focus,
+a:active {
+  @include remove-link-style;
+}
+
+a:hover {
+  color: $blue;
+}
+
+.active {
+  color: $primary;
+}

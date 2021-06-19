@@ -20,7 +20,7 @@ $text-utilities: (
   @each $property, $class, $values in $el {
     @each $nb, $value in $values {
       .t-#{$class}-#{$nb} {
-        #{$property}: $value;
+        #{$property}: $value !important;
       }
     }
   }

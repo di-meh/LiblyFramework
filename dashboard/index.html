@@ -40,31 +40,131 @@
         <div class="content-wrapper">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-full col-sm-6 col-md-3">
+                    <div class="col-full col-sm-8 col-md-4">
                         <div class="card">
                             <h6 class="card-title">Title of the card</h6>
                             <div class="card-content">
-                                <p>Test card content</p>
-                                <p>Test card content</p>
-                                <p>Test card content</p>
-                                <p>Test card content</p>
-                                <p>Test card content</p>
+                                <div class="alert">
+                                    <h1 class="alert-heading">Alert</h1>
+                                    <p>Alert description</p>
+                                </div>
+                                <div class="alert alert-primary">
+                                    <h1 class="alert-heading">Alert</h1>
+                                    <p>Alert description</p>
+                                </div>
+                                <div class="alert alert-success">
+                                    <h1 class="alert-heading">Alert</h1>
+                                    <p>Alert description</p>
+                                </div>
+                                <div class="alert alert-secondary">
+                                    <h1 class="alert-heading">Alert</h1>
+                                    <p>Alert description</p>
+                                </div>
+                                <div class="alert alert-danger">
+                                    <h1 class="alert-heading">Alert</h1>
+                                    <p>Alert description</p>
+                                </div>
+                                <div class="alert alert-warning">
+                                    <h1 class="alert-heading">Alert</h1>
+                                    <p>Alert description</p>
+                                </div>
+                                <div class="alert alert-info">
+                                    <h1 class="alert-heading">Alert</h1>
+                                    <p>Alert description</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-full col-sm-8 col-md-4">
+                        <div class="card">
+                            <h6 class="card-title">Buttons</h6>
+                            <div class="card-content">
+                                <button class="btn">Default</button>
+                                <button class="btn btn-primary">Primary</button>
+                                <button class="btn btn-secondary">Secondary</button>
+                                <button class="btn btn-success">Success</button>
+                                <button class="btn btn-danger">Danger</button>
+                                <button class="btn btn-warning">warning</button>
+                                <button class="btn btn-info">info</button>
+                                <button class="btn btn-link">link</button>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-full col-sm-6 col-md-3">
+                    <div class="col-full col-sm-8 col-md-4">
                         <div class="card">
                             <h6 class="card-title">Title of the card</h6>
                             <div class="card-content">
-                                <p>Test card content</p>
-                                <p>Test card content</p>
-                                <p>Test card content</p>
-                                <p>Test card content</p>
-                                <p>Test card content</p>
+                                <form>
+                                    <div class="input-group">
+                                        <label for="email">Champ 1</label>
+                                        <input type="email" class="input-field" name="email" id="email"
+                                            placeholder="Exemple de placeholder super stylé genre vraiment sah">
+                                    </div>
+                                    <div class="input-group">
+                                        <label for="pwd">Champ 2</label>
+                                        <input type="password" class="input-field" name="pwd" id="password">
+                                    </div>
+
+                                    <div class="input-group">
+                                        <label for="select-1">Couleur</label>
+                                        <select class="input-field" id="select-1">
+                                            <option value="" selected="selected" disabled="disabled">Choisis une couleur
+                                            </option>
+                                            <option value="red">Rouge</option>
+                                            <option value="blue">Bleu</option>
+                                            <option value="yellow">Vert</option>
+                                        </select>
+                                    </div>
+
+
+                                    <div class="input-group">
+                                        <label for="description">Description</label>
+                                        <textarea id="description" class="input-field"
+                                            placeholder="TextArea"></textarea>
+                                    </div>
+
+                                    <div class="input-group">
+                                        <div class="custom-checkbox">
+                                            <input type="checkbox" id="checkbox-1" value="checkbox-1">
+                                            <label for="checkbox-1">Checkbox 1</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="input-group">
+                                        <div class="custom-radio">
+                                            <input type="radio" name="radio-set-1" id="radio-1" value="radio-1">
+                                            <label for="radio-1">Radio 1</label>
+                                        </div>
+                                    </div>
+                                    <div class="input-group">
+                                        <!-- Second radio button (checked by default) -->
+                                        <div class="custom-radio">
+                                            <input type="radio" name="radio-set-1" id="radio-2" checked="checked"
+                                                value="radio-2">
+                                            <label for="radio-2">Radio 2</label>
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="input-group">
+                                        <!-- First switch -->
+                                        <div class="custom-switch">
+                                            <input type="checkbox" id="switch-1" value="">
+                                            <label for="switch-1">Switch 1</label>
+                                        </div>
+                                    </div>
+
+
+
+                                    <button type="submit" class="btn">Entrer</button>
+                                </form>
                             </div>
                         </div>
                     </div>
+
                 </div>
 
             </div>

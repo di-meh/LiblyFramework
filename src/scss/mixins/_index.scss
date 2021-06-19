@@ -1,3 +1,4 @@
+@use "sass:math";
 @mixin remove-list {
   margin: 0;
   padding: 0;
@@ -18,4 +19,15 @@
       #{$property}: $newvalue;
     }
   }
+}
+@mixin hide-input {
+  // position: absolute;
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+
+@function rem($pxVal) {
+  $base: 16;
+  @return math.div($pxVal, $base) * 1rem;
 }
