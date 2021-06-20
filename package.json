@@ -16,5 +16,7 @@
     "sass": "^1.35.1",
     "vite": "^2.3.7"
   },
-  "dependencies": {}
+  "dependencies": {
+    "chart.js": "^3.3.2"
+  }
 }

@@ -50,6 +50,11 @@ caniuse-lite@^1.0.30001219, caniuse-lite@^1.0.30001230:
   resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001239.tgz#66e8669985bb2cb84ccb10f68c25ce6dd3e4d2b8"
   integrity sha512-cyBkXJDMeI4wthy8xJ2FvDU6+0dtcZSJW3voUF8+e9f1bBeuvyZfc3PNbkOETyhbR+dGCPzn9E7MA3iwzusOhQ==
 
+chart.js@^3.3.2:
+  version "3.3.2"
+  resolved "https://registry.yarnpkg.com/chart.js/-/chart.js-3.3.2.tgz#667f3a0b6371b9719d8949c04a5bcbaec0d8c615"
+  integrity sha512-H0hSO7xqTIrwxoACqnSoNromEMfXvfuVnrbuSt2TuXfBDDofbnto4zuZlRtRvC73/b37q3wGAWZyUU41QPvNbA==
+
 "chokidar@>=3.0.0 <4.0.0":
   version "3.5.2"
   resolved "https://registry.yarnpkg.com/chokidar/-/chokidar-3.5.2.tgz#dba3976fcadb016f66fd365021d91600d01c1e75"

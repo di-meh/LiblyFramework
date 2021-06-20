@@ -1,6 +1,7 @@
 import './src/scss/index.scss'
 
-import './node_modules/jquery/dist/jquery'
+import jQuery from 'jquery'
+
 import './src/js/index'
 
 // document.querySelector('#app').innerHTML = `
