@@ -15,9 +15,8 @@
     "modern-normalize": "^1.1.0",
     "postcss": "^8.3.5",
     "sass": "^1.35.1",
-    "vite": "^2.3.7"
-  },
-  "dependencies": {
+    "vite": "^2.3.7",
     "chart.js": "^3.3.2"
-  }
+  },
+  "dependencies": {}
 }
