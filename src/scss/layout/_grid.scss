@@ -11,10 +11,6 @@ $columns: 12;
     $defvalue: calc(#{$gutter} / 2),
     $newvalue: $gutter
   );
-  // gap: calc(#{$gutter} / 2);
-  // @media screen and (min-width: map-get($map: $breakpoints, $key: "lg")) {
-  //   gap: $gutter;
-  // }
   margin: $gutter;
 
   .col {
