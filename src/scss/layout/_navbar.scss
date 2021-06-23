@@ -1,19 +1,12 @@
 .navbar {
-  display: flex;
   align-items: center;
   justify-content: space-between;
   position: fixed;
+  left: 0;
   z-index: 2020;
-  left: $small-sidebar-width;
-  @media screen and (min-width: map-get($map: $breakpoints, $key: "lg")) {
-    left: $big-sidebar-width;
-  }
   background-color: $gray-800;
   height: $navbar-height;
-  width: calc(100% - #{$small-sidebar-width});
-  @media screen and (min-width: map-get($map: $breakpoints, $key: "lg")) {
-    width: calc(100% - #{$big-sidebar-width});
-  }
+  width: 100%;
 
   &-title {
     margin-left: 1rem;

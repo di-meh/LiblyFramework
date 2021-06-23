@@ -4,11 +4,17 @@ $columns: 12;
 .row {
   display: grid;
   grid-template-columns: repeat($columns, [col-start] 1fr);
-  gap: calc(#{$gutter} / 2);
 
-  @media screen and (min-width: map-get($map: $breakpoints, $key: "lg")) {
-    gap: $gutter;
-  }
+  @include media(
+    $breakpoint: "lg",
+    $property: "gap",
+    $defvalue: calc(#{$gutter} / 2),
+    $newvalue: $gutter
+  );
+  // gap: calc(#{$gutter} / 2);
+  // @media screen and (min-width: map-get($map: $breakpoints, $key: "lg")) {
+  //   gap: $gutter;
+  // }
   margin: $gutter;
 
   .col {

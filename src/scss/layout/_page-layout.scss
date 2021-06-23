@@ -1,25 +1,57 @@
-.content-wrapper {
-  position: absolute;
-  // left: $small-sidebar-width;
-  top: $navbar-height;
-  width: calc(100% - #{$small-sidebar-width});
-  height: calc(100% - #{$navbar-height});
+.page-wrapper {
+  > .navbar,
+  .sidebar {
+    display: none;
+  }
 
-  @include media(
-    $breakpoint: "lg",
-    $property: "left",
-    $defvalue: $small-sidebar-width,
-    $newvalue: $big-sidebar-width
-  );
-  @include media(
-    $breakpoint: "lg",
-    $property: "width",
-    $defvalue: calc(100% - #{$small-sidebar-width}),
-    $newvalue: calc(100% - #{$big-sidebar-width})
-  );
+  &.with-sidebar {
+    > .content-wrapper {
+      width: calc(100% - #{$small-sidebar-width});
+      @include media(
+        $breakpoint: "lg",
+        $property: "left",
+        $defvalue: $small-sidebar-width,
+        $newvalue: $big-sidebar-width
+      );
+      @include media(
+        $breakpoint: "lg",
+        $property: "width",
+        $defvalue: calc(100% - #{$small-sidebar-width}),
+        $newvalue: calc(100% - #{$big-sidebar-width})
+      );
+    }
+    > .sidebar {
+      display: flex;
+    }
+  }
+  &.with-navbar {
+    > .content-wrapper {
+      height: calc(100% - #{$navbar-height});
+      top: $navbar-height;
+    }
+    > .navbar {
+      display: flex;
+    }
 
-  // @media screen and (min-width: map-get($map: $breakpoints, $key: "lg")) {
-  //   left: $big-sidebar-width;
-  //   width: calc(100% - $big-sidebar-width);
-  // }
+    &.with-sidebar {
+      > .navbar {
+        @include media(
+          $breakpoint: "lg",
+          $property: "left",
+          $defvalue: $small-sidebar-width,
+          $newvalue: $big-sidebar-width
+        );
+        @include media(
+          $breakpoint: "lg",
+          $property: "width",
+          $defvalue: calc(100% - #{$small-sidebar-width}),
+          $newvalue: calc(100% - #{$big-sidebar-width})
+        );
+      }
+    }
+  }
+
+  > .content-wrapper {
+    position: absolute;
+  }
 }
