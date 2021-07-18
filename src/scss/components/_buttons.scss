@@ -4,7 +4,7 @@
   padding: 0 1rem;
   border: none;
   background-color: $gray-400;
-  // text-shadow: 1px 1px 2px $gray-800;
+  cursor: pointer;
   box-shadow: 0 0.1rem 0.1rem transparentize($color: $gray-800, $amount: 0.8);
   @include ripple;
   &:hover {
