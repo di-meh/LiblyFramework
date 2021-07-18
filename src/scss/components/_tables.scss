@@ -55,10 +55,11 @@
 
 .dataTables_wrapper {
   font-family: $secondary-font !important;
-  * {
-    color: white !important;
-  }
+
   .dataTables_length {
+    * {
+      color: white !important;
+    }
     select {
       color: $gray-900 !important;
       option {
@@ -67,6 +68,9 @@
     }
   }
   .dataTables_filter {
+    * {
+      color: white !important;
+    }
     input {
       color: $gray-900 !important;
     }
