@@ -2,13 +2,14 @@ import Chart from 'chart.js/auto';
 import jQuery from 'jquery';
 import dt from 'datatables.net';
 import 'datatables.net-dt/css/jquery.dataTables.min.css';
-import 'select2';
+import select2 from 'select2';
 import 'select2/dist/css/select2.css';
 
 window.Chart = Chart;
 window.$ = window.jQuery = jQuery;
 dt(window, $);
 window.$.DataTable = dt;
+select2(window,$);
 window.select2 = select2;
 
 $(document).ready(function (){
