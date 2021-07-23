@@ -23,6 +23,7 @@ $(document).ready(function (){
         }
     });
     //Select2 pour les select multiple
+    $('select').select2();
     $('.select').select2();
 });
 
