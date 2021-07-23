@@ -12,6 +12,8 @@ $material-icon-scale: (
 );
 
 .material-icons {
+  max-width: 24px;
+  overflow: hidden;
   @each $nb, $value in $material-icon-scale {
     .md-#{$nb} {
       font-size: $value;
