@@ -3,11 +3,14 @@
   flex-direction: column;
   // margin-bottom: 1rem;
   & > label {
-    margin: 0.5rem 0;
+    margin-bottom: 0.5rem;
     padding: 0.4rem;
     font-family: $secondary-font;
     border: 2px solid $gray-700;
     border-radius: 0.4rem;
     width: fit-content;
+  }
+  #cke_editor {
+    margin-bottom: 1rem;
   }
 }
