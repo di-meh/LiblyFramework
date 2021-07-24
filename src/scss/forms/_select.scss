@@ -1,3 +1,29 @@
 select, .select {
   @include select;
 }
+.select2{
+  &.select2-container {
+    width: 100% !important;
+  }
+  .select2-selection.select2-selection--single {
+    height: 2rem!important;
+    padding: .4rem!important;
+    border: 2px solid $gray-700 !important;
+    background-color: $gray-600 !important;
+    color: $white !important;
+    .select2-selection__rendered {
+      line-height: unset !important;
+      padding:0 !important;
+    }
+  }
+}
+.select2-dropdown {
+  background-color: $gray-600 !important;
+  border: 2px solid $gray-700 !important;
+}
+.select2-container--default .select2-search--dropdown .select2-search__field {
+  background-color: $gray-800 !important;
+}
+.select2-results__option.select2-results__option--selected {
+  background-color: $gray-500 !important;
+}

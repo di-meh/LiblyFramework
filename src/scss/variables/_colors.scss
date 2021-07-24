@@ -1,15 +1,15 @@
 // Basé sur la palette de couleur de Bootstrap : https://getbootstrap.com
 
-$white: #fff;
-$gray-100: #f8f9fa;
+$white: #F2F2F2;
+$gray-100: #AFAFAF;
 $gray-200: #e9ecef;
 $gray-300: #dee2e6;
 $gray-400: #ced4da;
-$gray-500: #adb5bd;
-$gray-600: #6c757d;
-$gray-700: #495057;
-$gray-800: #343a40;
-$gray-900: #212529;
+$gray-500: #565555;
+$gray-600: #696969;
+$gray-700: #343434;
+$gray-800: #3E3E3E;
+$gray-900: #3E3E3E;
 $black: #000;
 
 $grays: (
@@ -24,11 +24,11 @@ $grays: (
   "900": $gray-900,
 );
 
-$blue: #0d6efd;
+$blue: #5897E9;
 $indigo: #6610f2;
 $purple: #6f42c1;
 $pink: #d63384;
-$red: #dc3545;
+$red: #F46058;
 $orange: #fd7e14;
 $yellow: #ffc107;
 $green: #198754;

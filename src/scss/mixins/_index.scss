@@ -67,11 +67,12 @@
   padding: 0.4rem !important;
   border: 2px solid $gray-700 !important;
   border-radius: 0.4rem !important;
-  background-color: $gray-300 !important;
+  background-color: $gray-600 !important;
 }
 @mixin input {
   border: 2px solid $gray-700 !important;
-  background-color: $gray-200 !important;
+  background-color: $gray-600 !important;
+  color: $white !important;
   border-radius: 0.4rem !important;
   height: 2rem !important;
   padding: 0.4rem !important;
