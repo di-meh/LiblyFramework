@@ -12,6 +12,7 @@ select, .select {
     background-color: $gray-600 !important;
     color: $white !important;
     .select2-selection__rendered {
+      color: $white !important;
       line-height: unset !important;
       padding:0 !important;
     }
