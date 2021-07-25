@@ -27,3 +27,22 @@ select, .select {
 .select2-results__option.select2-results__option--selected {
   background-color: $gray-500 !important;
 }
+
+.select2-selection.select2-selection--multiple {
+  display: flex;
+  border: 2px solid $gray-700 !important;
+  background-color: $gray-600 !important;
+  color: $white !important;
+  border-radius: .4rem!important;
+  height: 2rem!important;
+  // padding: .4rem!important;
+  width: 100%!important;
+  max-width: 100%!important;
+}
+.select2-search__field{
+  color: $white;
+  margin-top: 0 !important;
+}
+.select2-selection__choice__display {
+  color: $gray-500 !important;
+}
