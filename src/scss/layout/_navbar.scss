@@ -9,13 +9,23 @@
   height: $navbar-height;
   width: 100%;
 
-  &-left,
+  
   &-title {
     margin-left: 1rem;
   }
 
   &-right {
     margin-right: 1rem;
+    margin-left: auto;
+    display: flex;
+
+    & > * {
+      margin: 0 0.5rem;
+    }
+  }
+  &-left {
+    margin-left: 1rem;
+    margin-right: auto;
     display: flex;
 
     & > * {
